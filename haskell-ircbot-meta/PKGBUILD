@@ -1,0 +1,12 @@
+# Maintainer: berberman <hatsue@typed.icu>
+
+pkgname=haskell-ircbot-meta
+pkgver=1
+pkgrel=1
+pkgdesc='Dependencies of my berberman irc bot'
+url='https://gitlab.com/berberman/ircbot/'
+arch=('x86_64')
+depends=('ghc-libs' 
+  'haskell-aeson' 'haskell-http-client' # 'haskell-irc-client'  -- Missing in community
+  'haskell-megaparsec' 'haskell-microlens' 'haskell-modern-uri' 
+  'haskell-random' 'haskell-req' 'haskell-tagsoup')
