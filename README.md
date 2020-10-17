@@ -2,9 +2,21 @@
 
 Add the key to pacman keyring:
 
-```bash
-wget -qO - https://raw.githubusercontent.com/berberman/myrepo/master/berberman.asc \
-    | sudo pacman-key --add -
+```
+# wget -qO - https://raw.githubusercontent.com/berberman/myrepo/master/berberman.asc \
+    | pacman-key --add -
+```
+
+You can check the fingerprint:
+
+```
+# pacman-key --finger C4F93F1ED397E8CF
+```
+
+Then sign it locally:
+
+```
+# pacman-key --lsign-key C4F93F1ED397E8CF
 ```
 
 Append this repo in  `/etc/pacman.conf`:
