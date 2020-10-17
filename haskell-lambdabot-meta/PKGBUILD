@@ -1,0 +1,11 @@
+# This is a meta package, containing only dependencies of the target.
+# Maintainer: berberman <hatsue@typed.icu>
+
+pkgname=haskell-lambdabot-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Dependencies of lambdabot"
+url="https://wiki.haskell.org/Lambdabot"
+arch=('x86_64')
+# Following dependencies are missing in community:bytestring-handle, lambdabot-haskell-plugins, IOSpec, arrows, Stream, data-memocombinators, data-inttrie, haskell-src-exts-simple, lambdabot-irc-plugins, lambdabot-misc-plugins, lambdabot-novelty-plugins, brainfuck, dice, lambdabot-reference-plugins, lambdabot-social-plugins, lambdabot-core, dependent-map, dependent-sum-template, lambdabot-trusted, QuickCheck-safe, lazysmallcheck, numbers, oeis, prim-uniq, dependent-sum, constraints-extras, some, tasty-kat, vector-space, Boolean, NumInstances
+depends=('ghc-libs' 'haskell-quickcheck' 'haskell-aeson' 'haskell-constraints' 'haskell-th-extras' 'haskell-random-fu' 'haskell-src-exts' 'haskell-http' 'haskell-safesemaphore' 'haskell-edit-distance' 'haskell-hslogger' 'haskell-lifted-base' 'haskell-monad-control' 'haskell-network' 'haskell-network-bsd' 'haskell-random' 'haskell-random-source' 'haskell-regex-tdfa' 'haskell-split' 'haskell-syb' 'haskell-transformers-base' 'haskell-utf8-string' 'haskell-zlib' 'haskell-monadrandom' 'hoogle' 'haskell-logict' 'haskell-mueval' 'haskell-show' 'haskell-network-uri' 'haskell-tagsoup' 'misfortune' 'unlambda' 'haskell-test-framework' 'haskell-test-framework-quickcheck2' 'haskell-hunit' 'haskell-test-framework-hunit' 'haskell-primitive' 'haskell-memotrie')
