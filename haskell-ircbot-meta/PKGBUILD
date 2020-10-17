@@ -1,12 +1,11 @@
+# This is a meta package, containing only dependencies of the target.
 # Maintainer: berberman <hatsue@typed.icu>
 
 pkgname=haskell-ircbot-meta
 pkgver=1
-pkgrel=1
-pkgdesc='Dependencies of my berberman irc bot'
-url='https://gitlab.com/berberman/ircbot/'
+pkgrel=2
+pkgdesc="Dependencies of ircbot"
+url="https://gitlab.com/berberman/ircbot#readme"
 arch=('x86_64')
-depends=('ghc-libs' 
-  'haskell-aeson' 'haskell-http-client' # 'haskell-irc-client'  -- Missing in community
-  'haskell-megaparsec' 'haskell-microlens' 'haskell-modern-uri' 
-  'haskell-random' 'haskell-req' 'haskell-tagsoup')
+# Following dependencies are missing in community: irc-client, irc-conduit, irc, irc-ctcp, network-conduit-tls, tasty-kat
+depends=('ghc-libs' 'haskell-hunit' 'haskell-quickcheck' 'haskell-attoparsec' 'haskell-test-framework' 'haskell-test-framework-hunit' 'haskell-test-framework-quickcheck2' 'haskell-conduit' 'haskell-connection' 'haskell-contravariant' 'haskell-profunctors' 'haskell-stm-chans' 'haskell-tls' 'haskell-x509' 'haskell-x509-store' 'haskell-x509-validation' 'haskell-async' 'haskell-conduit-extra' 'haskell-aeson' 'haskell-http-client' 'haskell-megaparsec' 'haskell-microlens' 'haskell-modern-uri' 'haskell-random' 'haskell-req' 'haskell-tagsoup' 'haskell-data-default-class' 'haskell-network' 'haskell-streaming-commons' 'haskell-unliftio-core')

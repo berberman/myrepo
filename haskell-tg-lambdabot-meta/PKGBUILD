@@ -1,0 +1,11 @@
+# This is a meta package, containing only dependencies of the target.
+# Maintainer: berberman <hatsue@typed.icu>
+
+pkgname=haskell-tg-lambdabot-meta
+pkgver=1
+pkgrel=1
+pkgdesc="Dependencies of tg-lambdabot"
+url="https://github.com/berberman/tg-lambdabot#readme"
+arch=('x86_64')
+# The following dependency is missing in community: tasty-kat
+depends=('ghc-libs' 'haskell-aeson' 'haskell-megaparsec' 'haskell-microlens' 'haskell-polysemy' 'haskell-req' 'haskell-scientific' 'haskell-unordered-containers')
